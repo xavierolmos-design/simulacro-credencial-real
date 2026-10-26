@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.address-bar {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 4px 10px;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #444;
+}
+
+/* Encabezado y navegación */
+.main-header {
+    background-color: #e691b8;
+    border-bottom: 2px solid #d0709d;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-weight: normal;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    border: 2px solid #333;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #000;
+    transition: transform 0.1s;
+}
+
+.login-btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px #000;
+}
+
+/* Categorías */
+.categories-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background-color: #f7d6e6;
+    border-top: 1px solid #e0b0c8;
+}
+
+.categories-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.categories-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido Principal */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* Wireframe Placeholders */
+.image-placeholder {
+    border: 2px solid #333;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-banner {
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+/* Productos */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.see-more {
+    color: #2b5b84;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e64a85;
+    font-size: 15px;
+}
+
+.buy-btn {
+    background-color: #cc6699;
+    color: white;
+    border: 1px solid #000;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #000;
+    transition: opacity 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #b35282;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Alerta Modal */
+.alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.alert-box {
+    background-color: #fff;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 280px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.alert-header {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.alert-body {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #111;
+}
+
+.alert-ok-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 4px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.alert-ok-btn:hover {
+    background-color: #e0e0e0;
+}

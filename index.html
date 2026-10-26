@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xavier Olmos">
+    <title>FlorManía</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Flor<span>Manía</span></h1>
+
+            <nav class="main-nav">
+                <!-- Requerimiento 1: Hover que cambia el texto -->
+                <a href="#" id="envia-flores-link">Envía Flores</a>
+                <a href="#">Nosotros</a>
+                <!-- Requerimiento 2: Alerta/Modal al hacer clic -->
+                <button id="login-btn" class="login-btn">Iniciar Sesión</button>
+            </nav>
+        </div>
+
+        <!-- Navegación por categorías -->
+        <nav class="categories-nav">
+            <a href="#">Girasoles</a>
+            <a href="#">Rosas</a>
+            <a href="#">Claveles</a>
+            <a href="#">Lirios</a>
+            <a href="#">Orquídeas</a>
+            <a href="#">Margaritas</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <section class="hero-section">
+            <h2 class="section-title">Flor del Mes</h2>
+        </section>
+
+        <!-- Lista de productos -->
+        <section class="products-section">
+            <div class="products-header">
+                <span class="results-count">Mostrando <strong>50</strong> resultados</span>
+                <a href="#" class="see-more">Ver más Flores</a>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="image-placeholder product-image">
+
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <span class="product-title">Ramo de Rosas</span>
+                            <span class="product-price">$40.00</span>
+                        </div>
+                        <!-- Requerimiento 3: Botón que desaparece -->
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <div class="product-text">
+                            <span class="product-title">Arreglo Tulipanes</span>
+                            <span class="product-price">$50.00</span>
+                        </div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="image-placeholder product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-text">
+                            <span class="product-title">Bouquet Lirios</span>
+                            <span class="product-price">$25.00</span>
+                        </div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal estilo alerta del sistema -->
+    <div id="custom-alert" class="alert-overlay">
+        <div class="alert-box">
+            <p class="alert-header">This page says:</p>
+            <p class="alert-body">¡Bienvenido a la tienda de flores!</p>
+            <button id="alert-ok-btn" class="alert-ok-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
